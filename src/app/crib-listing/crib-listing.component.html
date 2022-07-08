@@ -1,1 +1,6 @@
-<p>crib-listing works!</p>
+<!-- <pre>{{ cribs | json }}</pre> -->
+
+<div *ngFor="let crib of cribs">
+  <h3>{{ crib.address }}</h3>
+  <h4>{{ crib.price }}</h4>
+</div>
