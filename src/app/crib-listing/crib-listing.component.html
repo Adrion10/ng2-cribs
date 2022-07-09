@@ -1,6 +1,10 @@
 <!-- <pre>{{ cribs | json }}</pre> -->
 
-<div *ngFor="let crib of cribs">
-  <h3>{{ crib.address }}</h3>
-  <h4>{{ crib.price }}</h4>
+<div *ngFor="let crib of cribs" class="col-sm-4">
+  <div class="thumbnail">
+    <img src="assets/images/{{ crib.image }}.jpg" alt="" />
+    <h3>{{ crib.address }}</h3>
+    <h4>{{ crib.price }}</h4>
+    <p>{{ crib.type }}</p>
+  </div>
 </div>
